@@ -21,20 +21,23 @@
             }
         });
       }
+      function muteVideo() {
+        var Mutebutton = document.getElementsByTagId("muter");
+        if(player.isMuted()){
+          player.unMute();
+          Mutebutton.innerHTML = "Mute"
+        }else{
+          player.mute();
+          Mutebutton.innerHTML = "unMute"
+        }}
       function onPlayerReady(event) {
         player.setLoop(true);
         player.setShuffle(true);
         player.nextVideo();
+        muteVideo();
       }
       function onPlayerError(event) {
         player.nextVideo();
-      }
-      function muteVideo(event) {
-        if(player.isMuted()){
-          player.unMute();
-        }else{
-          player.mute();
-        }
       }
   </script>
 
@@ -43,7 +46,7 @@
 <div id="content">
   <h1>Loading Artist Bingo</h1>
   <h2 id="subtitle">0% Filter, 100% fun</h2>
-  <span onclick="muteVideo();">mute</span>
+  <span onclick="muteVideo();" id="muter">mute</span>
   <div id="Buttons"></div>
 </div>
 </body>
