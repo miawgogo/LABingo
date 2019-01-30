@@ -17,12 +17,24 @@
         player = new YT.Player('bgvid', {
             events: {
               'onReady': onPlayerReady,
+              'onError': onPlayerError,
             }
         });
       }
       function onPlayerReady(event) {
         player.setLoop(true);
         player.setShuffle(true);
+        player.nextVideo();
+      }
+      function onPlayerError(event) {
+        player.nextVideo();
+      }
+      function muteVideo(event) {
+        if(player.isMuted()){
+          player.unMute();
+        }else{
+          player.mute();
+        }
       }
   </script>
 
@@ -31,7 +43,8 @@
 <div id="content">
   <h1>Loading Artist Bingo</h1>
   <h2 id="subtitle">0% Filter, 100% fun</h2>
+  <span onclick="muteVideo();">mute</span>
   <div id="Buttons"></div>
-</dev>
+</div>
 </body>
 </html>
