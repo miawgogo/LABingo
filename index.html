@@ -22,7 +22,7 @@
         });
       }
       function muteVideo() {
-        var Mutebutton = document.getElementsByTagId("muter");
+        var Mutebutton = document.getElementById("muter");
         if(player.isMuted()){
           player.unMute();
           Mutebutton.innerHTML = "Mute"
@@ -34,7 +34,7 @@
         player.setLoop(true);
         player.setShuffle(true);
         player.nextVideo();
-        muteVideo();
+        player.setVolume(50);
       }
       function onPlayerError(event) {
         player.nextVideo();
