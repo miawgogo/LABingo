@@ -12,13 +12,8 @@ function populateBingo(list) {
 
 let myRequest = new Request('options.txt');
 
-fetch(myRequest)
-.then(function(response) {
-    if (!response.ok) {
-      throw new Error('HTTP error, status = ' + response.status);
-    }
-    return response.blob();
-  })
-  .then(function(response) {
-    populateBingo(response.text);
+fetch(myRequest).then(function(response) {
+    return response.text().then(function(text) {
+        populateBingo(text);
+    });
   });
