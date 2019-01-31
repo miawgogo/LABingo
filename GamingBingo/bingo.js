@@ -1,5 +1,5 @@
 function bingoClickHandler(el){
-    if(this.classList.includes('got')){
+    if(this.classList.contains('got')){
         this.classList.remove('got');
     }else{
         this.classList.add('got');
