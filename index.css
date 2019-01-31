@@ -48,7 +48,7 @@
 
 #content {
     height: auto;
-    width: auto;
+    width: 100%;
 
     color:white;
     text-align: center;
@@ -57,22 +57,23 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5em;
+    overflow: 
 }
 .title{
-    font-size: 5vw;
+    font-size: 10vmax;
 
 }
 .subtitle{
-    font-size: 4vw;
+    font-size: 8vmax;
 
 }
 #content a{
-    font-size: 3vw;
+    font-size: 5vmax;
 
 }
 
 #muter{
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
 }
 .unmuted{
     cursor: url(assets/loadugh.png),default;
