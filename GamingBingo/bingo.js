@@ -1,5 +1,5 @@
 function populateBingo(list) {
-    var options = list.split('\r\n');
+    var options = list.split('\n');
     console.log(list)
     var squares = document.getElementsByClassName("bingoSquare");
     for (var i = 0; i < squares.length; i++) {
