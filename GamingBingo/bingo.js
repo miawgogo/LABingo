@@ -1,3 +1,4 @@
+
 function bingoClickHandler(el){
     if(this.classList.contains('got')){
         this.classList.remove('got');

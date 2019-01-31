@@ -12,6 +12,13 @@
     width:100%;
     height:100%
 }
+.bingoSquare, .freeSquare{
+    text-align: center;
+}
+#bingotable{
+    width: 100%;
+    height: 100%;
+}
 
 .got {
     background-color: maroon;
