@@ -78,3 +78,6 @@
 .unmuted{
     cursor: url(assets/loadugh.png),default;
 }
+a:visited, a:link, a:active    {
+    color:white;
+}
