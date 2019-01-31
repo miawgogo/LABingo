@@ -22,6 +22,7 @@
 }
 .bingoSquare, .freeSquare{
     text-align: center;
+    font-size: auto;
 }
 #bingotable{
     width: 100%;
