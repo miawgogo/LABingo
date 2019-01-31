@@ -12,7 +12,6 @@
     height: auto;
     width: 100%;
 
-    color:white;
     text-align: center;
 
     position: relative;
@@ -30,8 +29,8 @@
     text-align: center;
 }
 #bingotable{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .got {
