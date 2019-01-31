@@ -1,7 +1,7 @@
 @font-face {
     font-family: "loadingartist";
-    src: url("assets/LOADINGARTIST.eot");
-    src: url("assets/LOADINGARTIST.woff") format("woff")
+    src: url("/LABingo/assets/LOADINGARTIST.eot");
+    src: url("/LABingo/assets/LOADINGARTIST.woff") format("woff")
     }
 
 *{padding: 0;
