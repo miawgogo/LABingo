@@ -14,7 +14,7 @@ function populateBingo(list) {
         var randomIndex = Math.floor(Math.random() * options.length);
         var phraseStr = options[randomIndex];
         squares[i].innerHTML = phraseStr;
-        squares[i].onclick = bingoClickHandler;
+        squares[i].onclick = bingoClickHandler();
         options.splice(randomIndex, 1);
     }
 }
