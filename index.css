@@ -59,20 +59,20 @@
     font-size: 1.5em;
 }
 .title{
-    font-size: 5em;
+    font-size: 5vw;
 
 }
 .subtitle{
-    font-size: 4em;
+    font-size: 4vw;
 
 }
 #content a{
-    font-size: 3em;
+    font-size: 3vw;
 
 }
 
 #muter{
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 .unmuted{
     cursor: url(assets/loadugh.png),default;
