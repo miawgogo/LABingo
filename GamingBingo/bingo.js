@@ -5,7 +5,7 @@ function populateBingo(list) {
     for (var i = 0; i < squares.length; i++) {
         var randomIndex = Math.floor(Math.random() * options.length);
         var phraseStr = options[randomIndex];
-        squares[i] = phraseStr;
+        squares[i].innerHTML = phraseStr;
         options.splice(randomIndex, 1);
     }
 }
