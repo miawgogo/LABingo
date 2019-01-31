@@ -39,9 +39,7 @@
         player.setShuffle(true);
         player.nextVideo();
         player.setVolume(30);
-        if(player.getPlayerState() == -1){
-          player.playVideo()
-        }
+        player.playVideo()
       }
       function onPlayerError(event) {
         player.nextVideo();
