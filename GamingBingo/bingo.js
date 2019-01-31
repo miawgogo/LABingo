@@ -1,3 +1,11 @@
+function bingoClickHandler(el){
+    if(el.classList.includes('got')){
+        el.classList.remove('got');
+    }else{
+        el.classList.add('got');
+    }
+}
+
 function populateBingo(list) {
     var options = list.split('\n');
     console.log(list)
@@ -6,6 +14,7 @@ function populateBingo(list) {
         var randomIndex = Math.floor(Math.random() * options.length);
         var phraseStr = options[randomIndex];
         squares[i].innerHTML = phraseStr;
+        squares[i].onclick = bingoClickHandler;
         options.splice(randomIndex, 1);
     }
 }
